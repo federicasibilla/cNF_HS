@@ -1,0 +1,131 @@
+eth_micron / avg_adult_education: R²=0.623  alpha=0.4408  (n=11)
+  coefficients: {'rwi_1': 1.753}
+eth_micron / fe_ai: R²=0.000  alpha=0.6907  (n=11)
+  coefficients: {'rwi_1': 0.0}
+eth_micron / fol_ai: R²=0.000  alpha=24.9702  (n=11)
+  coefficients: {'rwi_1': 0.0}
+eth_micron / log_exp: R²=0.684  alpha=0.0358  (n=11)
+  coefficients: {'rwi_1': 0.5078}
+eth_micron / va_ai: R²=0.047  alpha=36.8885  (n=11)
+  coefficients: {'rwi_1': 11.8759}
+eth_micron / vb12_ai: R²=0.053  alpha=0.0365  (n=11)
+  coefficients: {'rwi_1': 0.0369}
+eth_micron / zn_ai: R²=0.000  alpha=0.3461  (n=11)
+  coefficients: {'rwi_1': 0.0}
+lka_micron / avg_adult_education: R²=0.809  alpha=0.0005  (n=9)
+  coefficients: {'rwi_1': 0.5075}
+lka_micron / fe_mg: R²=0.000  alpha=0.1955  (n=9)
+  coefficients: {'rwi_1': -0.0}
+lka_micron / folate_mcg: R²=0.181  alpha=0.0071  (n=9)
+  coefficients: {'rwi_1': 7.0435}
+lka_micron / log_exp: R²=0.685  alpha=0.0002  (n=9)
+  coefficients: {'rwi_1': 0.2461}
+lka_micron / vita_rae_mcg: R²=0.365  alpha=0.2141  (n=9)
+  coefficients: {'rwi_1': 15.981}
+lka_micron / vitb12_mcg: R²=0.000  alpha=0.0373  (n=9)
+  coefficients: {'rwi_1': 0.0}
+lka_micron / zn_mg: R²=0.000  alpha=0.0047  (n=9)
+  coefficients: {'rwi_1': -0.0}
+lka_vam / FCS: R²=0.543  alpha=0.6537  (n=9)
+  coefficients: {'rwi_1': 1.4868}
+lka_vam / FES: R²=0.147  alpha=0.0000  (n=9)
+  coefficients: {'rwi_1': -0.0086}
+lka_vam / education_score: R²=0.118  alpha=0.0000  (n=9)
+  coefficients: {'rwi_1': 0.0077}
+lka_vam / log_income: R²=0.120  alpha=0.0052  (n=9)
+  coefficients: {'rwi_1': 0.0369}
+lka_vam / rCSI: R²=0.000  alpha=0.1656  (n=9)
+  coefficients: {'rwi_1': -0.0}
+lka_vam / space_per_person: R²=0.420  alpha=0.0001  (n=9)
+  coefficients: {'rwi_1': -0.0611}
+moz_vam / FCS: R²=0.000  alpha=0.8426  (n=11)
+  coefficients: {'rwi_1': 0.0}
+moz_vam / FGHIron: R²=0.000  alpha=0.0080  (n=11)
+  coefficients: {'rwi_1': -0.0}
+moz_vam / FGProtein: R²=0.000  alpha=0.1187  (n=11)
+  coefficients: {'rwi_1': 0.0}
+moz_vam / FGVitA: R²=0.000  alpha=0.2668  (n=11)
+  coefficients: {'rwi_1': 0.0}
+moz_vam / rCSI: R²=0.000  alpha=0.1747  (n=11)
+  coefficients: {'rwi_1': 0.0}
+nga_micron / avg_adult_education: R²=0.485  alpha=0.0089  (n=37)
+  coefficients: {'rwi_1': 1.4429}
+nga_micron / fe_ai: R²=0.000  alpha=0.1356  (n=37)
+  coefficients: {'rwi_1': 0.0}
+nga_micron / fol_ai: R²=0.000  alpha=3.1371  (n=37)
+  coefficients: {'rwi_1': 0.0}
+nga_micron / log_exp: R²=0.311  alpha=0.0085  (n=37)
+  coefficients: {'rwi_1': 0.2335}
+nga_micron / va_ai: R²=0.296  alpha=3.8678  (n=37)
+  coefficients: {'rwi_1': 59.1669}
+nga_micron / vb12_ai: R²=0.214  alpha=0.0319  (n=37)
+  coefficients: {'rwi_1': 0.5665}
+nga_micron / zn_ai: R²=0.132  alpha=0.0007  (n=37)
+  coefficients: {'rwi_1': 0.7483}
+nga_mics / avg_adult_education: R²=0.511  alpha=0.0001  (n=37)
+  coefficients: {'rwi_1': 0.0922}
+nga_mics / space_per_person: R²=0.279  alpha=0.0065  (n=37)
+  coefficients: {'rwi_1': 0.0428}
+nga_mics / wscore: R²=0.567  alpha=0.0004  (n=37)
+  coefficients: {'rwi_1': 0.3786}
+yem_mvam / FCS: R²=0.211  alpha=0.0278  (n=22)
+  coefficients: {'entropy_2': 1.4547}
+[yem_mvam / log_exp_pp] dropped 1 rows due to inf:
+    adm1_name  entropy_2  target_value
+389    Ma'rib   0.492531          -inf
+yem_mvam / log_exp_pp: R²=0.043  alpha=0.0001  (n=21)
+  coefficients: {'entropy_2': -0.0637}
+yem_mvam / rCSI: R²=0.080  alpha=0.0209  (n=22)
+  coefficients: {'entropy_2': 0.7139}
+zwe_mics / avg_adult_education: R²=0.767  alpha=0.0000  (n=10)
+  coefficients: {'rwi_1': 0.0375}
+zwe_mics / space_per_person: R²=0.101  alpha=0.0006  (n=10)
+  coefficients: {'rwi_1': 0.0044}
+zwe_mics / wscore: R²=0.909  alpha=0.0364  (n=10)
+  coefficients: {'rwi_1': 0.4449}
+
+--- Summary ---
+   experiment_id               target        r2  n_adm1      alpha
+0     eth_micron  avg_adult_education  0.623306      11   0.440780
+1     eth_micron                fe_ai  0.000000      11   0.690688
+2     eth_micron               fol_ai  0.000000      11  24.970162
+3     eth_micron              log_exp  0.683680      11   0.035766
+4     eth_micron                va_ai  0.047143      11  36.888535
+5     eth_micron              vb12_ai  0.052656      11   0.036547
+6     eth_micron                zn_ai  0.000000      11   0.346112
+7     lka_micron  avg_adult_education  0.808635       9   0.000508
+8     lka_micron                fe_mg  0.000000       9   0.195526
+9     lka_micron           folate_mcg  0.181290       9   0.007051
+10    lka_micron              log_exp  0.685098       9   0.000246
+11    lka_micron         vita_rae_mcg  0.364506       9   0.214090
+12    lka_micron           vitb12_mcg  0.000000       9   0.037315
+13    lka_micron                zn_mg  0.000000       9   0.004698
+14       lka_vam                  FCS  0.542814       9   0.653686
+15       lka_vam                  FES  0.146651       9   0.000009
+16       lka_vam      education_score  0.117857       9   0.000008
+17       lka_vam           log_income  0.120200       9   0.005186
+18       lka_vam                 rCSI  0.000000       9   0.165633
+19       lka_vam     space_per_person  0.419686       9   0.000061
+20       moz_vam                  FCS  0.000000      11   0.842606
+21       moz_vam              FGHIron  0.000000      11   0.007986
+22       moz_vam            FGProtein  0.000000      11   0.118719
+23       moz_vam               FGVitA  0.000000      11   0.266847
+24       moz_vam                 rCSI  0.000000      11   0.174660
+25    nga_micron  avg_adult_education  0.484826      37   0.008908
+26    nga_micron                fe_ai  0.000000      37   0.135614
+27    nga_micron               fol_ai  0.000000      37   3.137062
+28    nga_micron              log_exp  0.311011      37   0.008498
+29    nga_micron                va_ai  0.295859      37   3.867750
+30    nga_micron              vb12_ai  0.213629      37   0.031935
+31    nga_micron                zn_ai  0.132491      37   0.000749
+32      nga_mics  avg_adult_education  0.510609      37   0.000092
+33      nga_mics     space_per_person  0.279295      37   0.006522
+34      nga_mics               wscore  0.567187      37   0.000379
+35      yem_mvam                  FCS  0.211267      22   0.027778
+36      yem_mvam           log_exp_pp  0.043465      21   0.000064
+37      yem_mvam                 rCSI  0.080499      22   0.020929
+38      zwe_mics  avg_adult_education  0.766527      10   0.000038
+39      zwe_mics     space_per_person  0.100954      10   0.000566
+40      zwe_mics               wscore  0.908845      10   0.036407
+
+Log saved to /data/shared/fsibilla/clean_code/Q1/R2/regression_log.txt

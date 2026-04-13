@@ -1,0 +1,110 @@
+{
+  "n_rows_used": 2860,
+  "n_experiments": 8,
+  "features": [
+    "variability_intrinsic_mean",
+    "n_train_mean"
+  ],
+  "regression_targets": [
+    "improvement_mean",
+    "improvement_std"
+  ],
+  "classification_target": "target_improvement_positive = 1(improvement_mean > 0)",
+  "group_col": "experiment",
+  "outer_cv": "leave-one-experiment-out",
+  "inner_cv_regression": "KFold(n_splits=5, shuffle=True, random_state=42)",
+  "inner_cv_classification": "StratifiedKFold(n_splits<= 5, shuffle=True, random_state=42)",
+  "classification_balancing": "class_weight='balanced'",
+  "regression_model": "DecisionTreeRegressor (multi-output)",
+  "classification_model": "DecisionTreeClassifier",
+  "random_state": 42,
+  "regression_param_grid": [
+    {
+      "max_depth": 2,
+      "min_samples_leaf": 5,
+      "min_samples_split": 10
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 5,
+      "min_samples_split": 10
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 5,
+      "min_samples_split": 10
+    },
+    {
+      "max_depth": 1,
+      "min_samples_leaf": 5,
+      "min_samples_split": 10
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "min_samples_split": 20
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 10,
+      "min_samples_split": 20
+    },
+    {
+      "max_depth": 1,
+      "min_samples_leaf": 10,
+      "min_samples_split": 20
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "min_samples_split": 20
+    }
+  ],
+  "classification_param_grid": [
+    {
+      "max_depth": 2,
+      "min_samples_leaf": 5,
+      "min_samples_split": 10
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 5,
+      "min_samples_split": 10
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 5,
+      "min_samples_split": 10
+    },
+    {
+      "max_depth": 1,
+      "min_samples_leaf": 5,
+      "min_samples_split": 10
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "min_samples_split": 20
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 10,
+      "min_samples_split": 20
+    },
+    {
+      "max_depth": 1,
+      "min_samples_leaf": 10,
+      "min_samples_split": 20
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "min_samples_split": 20
+    }
+  ],
+  "reg_mean_test_mae_across_targets": 0.0727946326868365,
+  "reg_mean_test_rmse_across_targets": 0.09978891550258355,
+  "cls_mean_test_roc_auc": 0.6500405462208736,
+  "cls_mean_test_f1": 0.5390368067871929,
+  "cls_mean_test_accuracy": 0.671179214929215
+}
