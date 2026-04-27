@@ -7,6 +7,7 @@ Q1/biased/**
 Q0/experiments/*/*/results/**
 Q0/fidelity/baselines/*/bivariate
 Q0/fidelity/baselines/*/marginal
+Q0/experiments/NF
 *.pdf
 *.csv
 *.png
