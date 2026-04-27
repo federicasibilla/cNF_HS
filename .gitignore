@@ -1,4 +1,5 @@
 pipeline_figure/
+data_descriptions/
 Q1/experiments/*/results/train_*/**
 Q1/experiments_minimal/*/results/train_*/**
 Q1/feature_importance/*/results/drop_*
