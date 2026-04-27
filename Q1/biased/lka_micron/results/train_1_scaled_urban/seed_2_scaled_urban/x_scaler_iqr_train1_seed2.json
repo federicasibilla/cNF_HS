@@ -1,0 +1,72 @@
+{
+  "target_cols": [
+    "vita_rae_mcg",
+    "folate_mcg",
+    "vitb12_mcg",
+    "fe_mg",
+    "zn_mg",
+    "avg_adult_education",
+    "log_exp"
+  ],
+  "cond_cols": [
+    "entropy_2",
+    "rwi_2",
+    "r3q",
+    "rfh_avg",
+    "vim_avg"
+  ],
+  "train_frac_psu": 1,
+  "train_percent_psu": 1,
+  "psu_per_adm1": 1,
+  "seed": 2,
+  "psu_col": "psu",
+  "sector_col": "sector",
+  "adm1_col": "adm1name",
+  "sampling_rule": "urban_biased_guarantee_1_per_adm1_fallback_random_if_no_urban",
+  "first_psu_rule": "urban_only_if_available_else_random_any_sector",
+  "extra_psu_rule": "urban_pool_first_else_random_any_sector",
+  "sector_in_conditioning": false,
+  "urban_sector_code": 1,
+  "n_mandatory_fallbacks": 0,
+  "n_extra_fallbacks": 0,
+  "psu_sector_rule": "modal",
+  "psu_adm1_rule": "modal",
+  "n_psu_total": 2411,
+  "n_psu_train_target": 9,
+  "n_psu_train_actual": 9,
+  "n_adm1_total": 9,
+  "n_adm1_covered": 9,
+  "train_psus": [
+    "111072",
+    "121007",
+    "132050",
+    "142015",
+    "151027",
+    "162042",
+    "171007",
+    "181056",
+    "191045"
+  ],
+  "train_sector_composition": {
+    "1": 76
+  },
+  "method": "iqr",
+  "center": [
+    221.41695140000002,
+    203.65749190000002,
+    1.6596428950000002,
+    13.04177319,
+    9.388619057500001,
+    10.333333333333334,
+    12.498720825049102
+  ],
+  "scale": [
+    153.69808517499996,
+    95.335447775,
+    1.420434361,
+    5.762854570000002,
+    3.7394997967500005,
+    3.7699999999999996,
+    1.558343337289335
+  ]
+}

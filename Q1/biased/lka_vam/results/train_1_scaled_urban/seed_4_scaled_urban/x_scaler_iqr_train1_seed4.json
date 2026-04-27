@@ -1,0 +1,67 @@
+{
+  "target_cols": [
+    "education_score",
+    "log_income",
+    "space_per_person",
+    "FES",
+    "FCS",
+    "rCSI"
+  ],
+  "cond_cols": [
+    "entropy_2",
+    "rwi_2"
+  ],
+  "train_frac_psu": 1,
+  "train_percent_psu": 1,
+  "psu_per_adm1": 1,
+  "seed": 4,
+  "psu_col": "psu",
+  "sector_col": "sector",
+  "adm1_col": "adm1name",
+  "sampling_rule": "urban_biased_guarantee_1_per_adm1_fallback_random_if_no_urban",
+  "first_psu_rule": "urban_only_if_available_else_random_any_sector",
+  "extra_psu_rule": "urban_pool_first_else_random_any_sector",
+  "sector_in_conditioning": false,
+  "urban_sector_code": 1,
+  "n_mandatory_fallbacks": 0,
+  "n_extra_fallbacks": 0,
+  "psu_sector_rule": "modal",
+  "psu_adm1_rule": "modal",
+  "n_psu_total": 1469,
+  "n_psu_train_target": 9,
+  "n_psu_train_actual": 9,
+  "n_adm1_total": 9,
+  "n_adm1_covered": 9,
+  "train_psus": [
+    "Central_Gatambe",
+    "Eastern_Sainthamaruthu 09",
+    "North_Central_Weera Pedesa",
+    "North_Western_Kurunegala Town - North",
+    "Northern_Ariyalai North West",
+    "Sabaragamuwa_Mudduva East",
+    "Southern_Sudarshi Place",
+    "Uva_Badulla Central",
+    "Western_Thimbirigasyaya"
+  ],
+  "train_sector_composition": {
+    "0": 10,
+    "1": 85
+  },
+  "method": "iqr",
+  "center": [
+    0.6130952380952381,
+    11.407564949312402,
+    0.6,
+    0.5425067553523176,
+    53.5,
+    0.0
+  ],
+  "scale": [
+    0.24196428571428574,
+    1.0986122886681091,
+    0.375,
+    0.23118858578511126,
+    20.5,
+    6.5
+  ]
+}

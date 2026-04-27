@@ -1,0 +1,75 @@
+{
+  "target_cols": [
+    "va_ai",
+    "fol_ai",
+    "vb12_ai",
+    "fe_ai",
+    "zn_ai",
+    "avg_adult_education",
+    "log_exp"
+  ],
+  "cond_cols": [
+    "entropy_2",
+    "rwi_2",
+    "r3q",
+    "rfh_avg",
+    "vim_avg"
+  ],
+  "train_frac_psu": 1,
+  "train_percent_psu": 1,
+  "psu_per_adm1": 1,
+  "seed": 2,
+  "psu_col": "psu",
+  "sector_col": "sector",
+  "adm1_col": "adm1name",
+  "sampling_rule": "urban_biased_guarantee_1_per_adm1_fallback_random_if_no_urban",
+  "first_psu_rule": "urban_only_if_available_else_random_any_sector",
+  "extra_psu_rule": "urban_pool_first_else_random_any_sector",
+  "sector_in_conditioning": false,
+  "urban_sector_code": 1,
+  "n_mandatory_fallbacks": 1,
+  "n_extra_fallbacks": 0,
+  "psu_sector_rule": "modal",
+  "psu_adm1_rule": "modal",
+  "n_psu_total": 498,
+  "n_psu_train_target": 11,
+  "n_psu_train_actual": 11,
+  "n_adm1_total": 11,
+  "n_adm1_covered": 11,
+  "train_psus": [
+    "Addis_Ababa_Addis_Ababa_140813010801344",
+    "Afar_Afar_20304088800703",
+    "Amhara_Amhara_31506088800509",
+    "B._Gumuz_B._Gumuz_60401088802401",
+    "Dire_Dawa_Dire_Dawa_150101088803105",
+    "Gambela_Gambela_120401088800504",
+    "Harari_Harari_130103088800305",
+    "Oromia_Oromia_60401088802401",
+    "SNNPR_SNNPR_71901088803902",
+    "Somali_Somali_50907088800903",
+    "Tigray_Tigray_10205088801106"
+  ],
+  "train_sector_composition": {
+    "1": 111,
+    "2": 15
+  },
+  "method": "iqr",
+  "center": [
+    224.03735427764406,
+    193.63158023578157,
+    0.0867972630481543,
+    26.866691003262936,
+    12.968485314626266,
+    1.0833333333333335,
+    4.548585836935272
+  ],
+  "scale": [
+    446.69475529715646,
+    255.34795544920985,
+    0.7814875087966232,
+    31.21974668753731,
+    12.221085953456992,
+    3.458333333333333,
+    1.5132802462504618
+  ]
+}

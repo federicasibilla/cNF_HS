@@ -1,0 +1,59 @@
+{
+  "target_cols": [
+    "space_per_person",
+    "avg_adult_education",
+    "wscore"
+  ],
+  "cond_cols": [
+    "entropy_1",
+    "rwi_1"
+  ],
+  "train_frac_psu": 1,
+  "train_percent_psu": 1,
+  "psu_per_adm1": 1,
+  "seed": 4,
+  "psu_col": "psu",
+  "sector_col": "sector",
+  "adm1_col": "adm1name",
+  "sampling_rule": "urban_biased_guarantee_1_per_adm1_fallback_random_if_no_urban",
+  "first_psu_rule": "urban_only_if_available_else_random_any_sector",
+  "extra_psu_rule": "urban_pool_first_else_random_any_sector",
+  "sector_in_conditioning": false,
+  "urban_sector_code": 1,
+  "n_mandatory_fallbacks": 1,
+  "n_extra_fallbacks": 0,
+  "psu_sector_rule": "modal",
+  "psu_adm1_rule": "modal",
+  "n_psu_total": 462,
+  "n_psu_train_target": 10,
+  "n_psu_train_actual": 10,
+  "n_adm1_total": 10,
+  "n_adm1_covered": 10,
+  "train_psus": [
+    "Bulawayo_35.0",
+    "Harare_462.0",
+    "Manicaland_88.0",
+    "Mashonaland_Central_105.0",
+    "Mashonaland_East_184.0",
+    "Mashonaland_West_232.0",
+    "Masvingo_372.0",
+    "Matabeleland_North_244.0",
+    "Matabeleland_South_286.0",
+    "Midlands_333.0"
+  ],
+  "train_sector_composition": {
+    "1": 215,
+    "2": 16
+  },
+  "method": "iqr",
+  "center": [
+    0.5,
+    0.375,
+    -0.7448531005987801
+  ],
+  "scale": [
+    0.2916666666666667,
+    0.15000000000000002,
+    0.5621820916519995
+  ]
+}

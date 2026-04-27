@@ -1,0 +1,67 @@
+{
+  "target_cols": [
+    "education_score",
+    "log_income",
+    "space_per_person",
+    "FES",
+    "FCS",
+    "rCSI"
+  ],
+  "cond_cols": [
+    "entropy_2",
+    "rwi_2"
+  ],
+  "train_frac_psu": 1,
+  "train_percent_psu": 1,
+  "psu_per_adm1": 1,
+  "seed": 3,
+  "psu_col": "psu",
+  "sector_col": "sector",
+  "adm1_col": "adm1name",
+  "sampling_rule": "urban_biased_guarantee_1_per_adm1_fallback_random_if_no_urban",
+  "first_psu_rule": "urban_only_if_available_else_random_any_sector",
+  "extra_psu_rule": "urban_pool_first_else_random_any_sector",
+  "sector_in_conditioning": false,
+  "urban_sector_code": 1,
+  "n_mandatory_fallbacks": 0,
+  "n_extra_fallbacks": 0,
+  "psu_sector_rule": "modal",
+  "psu_adm1_rule": "modal",
+  "n_psu_total": 1469,
+  "n_psu_train_target": 9,
+  "n_psu_train_actual": 9,
+  "n_adm1_total": 9,
+  "n_adm1_covered": 9,
+  "train_psus": [
+    "Central_Kandangama South",
+    "Eastern_Sonagavadi",
+    "North_Central_Step 3 part 1",
+    "North_Western_Thiladiya",
+    "Northern_Pallimunai East",
+    "Sabaragamuwa_Hingura",
+    "Southern_Hetti  Weediya",
+    "Uva_Inikambedda",
+    "Western_Korathota"
+  ],
+  "train_sector_composition": {
+    "0": 5,
+    "1": 81
+  },
+  "method": "iqr",
+  "center": [
+    0.5625,
+    11.695247021764184,
+    0.6666666666666666,
+    0.5498616965511247,
+    48.0,
+    3.0
+  ],
+  "scale": [
+    0.2901785714285715,
+    0.9162907318741542,
+    0.5,
+    0.1649794172933129,
+    25.0,
+    8.0
+  ]
+}

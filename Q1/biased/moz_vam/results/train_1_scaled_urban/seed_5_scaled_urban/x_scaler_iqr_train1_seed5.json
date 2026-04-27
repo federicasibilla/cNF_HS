@@ -1,0 +1,66 @@
+{
+  "target_cols": [
+    "FCS",
+    "rCSI",
+    "FGVitA",
+    "FGProtein",
+    "FGHIron"
+  ],
+  "cond_cols": [
+    "entropy_2",
+    "rwi_2"
+  ],
+  "train_frac_psu": 1,
+  "train_percent_psu": 1,
+  "psu_per_adm1": 1,
+  "seed": 5,
+  "psu_col": "psu",
+  "sector_col": "sector",
+  "adm1_col": "adm1name",
+  "sampling_rule": "urban_biased_guarantee_1_per_adm1_fallback_random_if_no_urban",
+  "first_psu_rule": "urban_only_if_available_else_random_any_sector",
+  "extra_psu_rule": "urban_pool_first_else_random_any_sector",
+  "sector_in_conditioning": false,
+  "urban_sector_code": 1,
+  "n_mandatory_fallbacks": 0,
+  "n_extra_fallbacks": 0,
+  "psu_sector_rule": "modal",
+  "psu_adm1_rule": "modal",
+  "n_psu_total": 587,
+  "n_psu_train_target": 11,
+  "n_psu_train_actual": 11,
+  "n_adm1_total": 11,
+  "n_adm1_covered": 11,
+  "train_psus": [
+    "Cabo_Delgado_25.0",
+    "Gaza_19.0",
+    "Inhambane_628.0",
+    "Manica_10.0",
+    "Maputo_Cidade_6.0",
+    "Maputo_Prov\u00ednci_62.0",
+    "Nampula_129.0",
+    "Niassa_28.0",
+    "Sofala_30.0",
+    "Tete_26.0",
+    "Zamb\u00e9zia_57.0"
+  ],
+  "train_sector_composition": {
+    "1": 87,
+    "2": 13
+  },
+  "method": "iqr",
+  "center": [
+    52.25,
+    2.0,
+    5.0,
+    6.0,
+    3.0
+  ],
+  "scale": [
+    19.25,
+    7.25,
+    5.25,
+    5.0,
+    3.0
+  ]
+}
