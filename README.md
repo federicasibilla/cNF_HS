@@ -87,6 +87,10 @@ Q1/experiments/<dataset>/
 
 A reduced version of the main experiment pipeline, for running categorical region-label conditioned experiments (NF).
 
+### `Q1/experiments_sectoronly/`
+
+A reduced version of the main experiment pipeline, for running categorical region-label and sector label conditioned experiments (NF+sector).
+
 
 ### `Q1/biased/`
 
@@ -109,6 +113,10 @@ variability.ipynb
 ### `Q1/across_experiments_eval_minimal/`
 
 Aggregated outputs for the reduced experiment pipeline.
+
+### `Q1/across_experiments_eval_sectoronly/`
+
+Aggregated outputs for the reduced experiment pipeline with only sector conditioning.
 
 ### `Q1/across_experiments_sensitivity/`
 
@@ -206,3 +214,9 @@ Large preprocessed data files are not suitable for GitHub storage. The required 
 ## Utilization
 
 Add utilization pipeline
+
+---
+
+## Citation
+
+Add how to cite

@@ -1,0 +1,17 @@
+data_descriptions/
+pipeline_figure/
+Q1/experiments/*/results/train_*/**
+Q1/experiments_minimal/*/results/train_*/**
+Q1/experiments_sectoronly/*/results/train_*/**
+Q1/feature_importance/*/results/drop_*
+Q1/bayesian/*/results/**
+Q0/experiments/*/*/results/**
+Q0/fidelity/baselines/*/bivariate
+Q0/fidelity/baselines/*/marginal
+Q0/experiments/NF
+*.pdf
+*.csv
+*.png
+*.txt
+*.parquet
+*.xlsx
