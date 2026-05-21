@@ -11,6 +11,7 @@ Q0/fidelity/baselines/*/marginal
 Q0/experiments/NF
 *.pdf
 *.csv
+*.svg
 *.png
 *.txt
 *.parquet

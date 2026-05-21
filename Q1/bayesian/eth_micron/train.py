@@ -17,7 +17,7 @@ RESULTS_DIR = "/data/shared/fsibilla/clean_code/Q1/experiments/eth_micron/result
 OUTPUT_DIR  = "/data/shared/fsibilla/clean_code/Q1/bayesian/eth_micron/results"
 
 PSU_LEVEL = 1
-SEEDS     = [2, 3, 4, 5]    # one training subset per seed
+SEEDS     = [1]    # one training subset per seed
 N_RNVP    = 5                  # how many times to reinitialize and retrain RealNVP
 
 TARGET_COLS    = ['va_ai', 'fol_ai', 'vb12_ai', 'fe_ai', 'zn_ai', 'avg_adult_education', 'log_exp']
