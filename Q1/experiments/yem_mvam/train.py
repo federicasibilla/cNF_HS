@@ -37,7 +37,7 @@ target_cols = [
 
 # continuous ADM1-level conditioning features (already present per row)
 cond_cols_adm1 = [
-    "entropy_2", "wscore_1",
+    "entropy_2", "wscore_1", 'vim_avg_2','rfh_avg_2','r3q_2'
 ]
 
 adm1_name_col = "adm1name"

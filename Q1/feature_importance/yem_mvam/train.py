@@ -31,7 +31,9 @@ target_cols = [
 
 # Full set of conditioning columns — subsets are defined per feature level below
 cond_cols_adm1 = [
-    "entropy_2", "wscore_1"
+    "entropy_2", "wscore_1",
+    'r3q_2', 'rfh_avg_2',
+    'vim_avg_2'
 ]
 
 # ---------------------------------------------------------------
@@ -40,6 +42,7 @@ cond_cols_adm1 = [
 # "drop_cond_cols" lists which columns from cond_cols_adm1 to remove.
 # ---------------------------------------------------------------
 FEATURE_REMOVAL_LEVELS = [
+    # --- size 1: remove one block ---
     {
         "name": "drop_entropy2",
         "drop_cond_cols": ["entropy_2"]
@@ -49,9 +52,23 @@ FEATURE_REMOVAL_LEVELS = [
         "drop_cond_cols": ["wscore_1"]
     },
     {
+        "name": "drop_meteoclimatic",
+        "drop_cond_cols": ["r3q_2", "rfh_avg_2", "vim_avg_2"]
+    },
+
+    # --- size 2: remove two blocks ---
+    {
         "name": "drop_entropy2_wscore1",
         "drop_cond_cols": ["entropy_2", "wscore_1"]
-    }
+    },
+    {
+        "name": "drop_entropy2_meteoclimatic",
+        "drop_cond_cols": ["entropy_2", "r3q_2", "rfh_avg_2", "vim_avg_2"]
+    },
+    {
+        "name": "drop_wscore1_meteoclimatic",
+        "drop_cond_cols": ["wscore_1", "r3q_2", "rfh_avg_2", "vim_avg_2"]
+    },
 ]
 
 adm1_name_col = "adm1name"
