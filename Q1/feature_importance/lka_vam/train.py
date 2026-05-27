@@ -42,7 +42,8 @@ target_cols = [
 # Full set of conditioning columns — subsets are defined per feature level below
 cond_cols_adm1 = [
     "entropy_2", "rwi_2",
-    "sector"
+    "sector", 'r3q', 'rfh_avg',
+    'vim_avg'
 ]
 
 # ---------------------------------------------------------------
@@ -62,12 +63,24 @@ FEATURE_REMOVAL_LEVELS = [
         "name": "drop_rwi2",
         "drop_cond_cols": ["rwi_2"]
     },
+    {
+        "name": "drop_meteoclimatic",
+        "drop_cond_cols": ["r3q", "rfh_avg", "vim_avg"]
+    },
 
     # --- size 2: remove two blocks ---
     {
         "name": "drop_entropy2_rwi2",
         "drop_cond_cols": ["entropy_2", "rwi_2"]
-    }
+    },
+    {
+        "name": "drop_entropy2_meteoclimatic",
+        "drop_cond_cols": ["entropy_2", "r3q", "rfh_avg", "vim_avg"]
+    },
+    {
+        "name": "drop_rwi2_meteoclimatic",
+        "drop_cond_cols": ["rwi_2", "r3q", "rfh_avg", "vim_avg"]
+    },
 ]
 
 sector_col = "sector"

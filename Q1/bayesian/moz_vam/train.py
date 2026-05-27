@@ -20,8 +20,9 @@ PSU_LEVEL = 1
 SEEDS     = [1, 2, 3, 4, 5]    # one training subset per seed
 N_RNVP    = 5                  # how many times to reinitialize and retrain RealNVP
 
-TARGET_COLS    = ['FCS', 'rCSI', 'FGVitA', 'FGProtein', 'FGHIron']
-COND_BASE_COLS = ["entropy_2", "rwi_2"]
+TARGET_COLS    = ['FCS', 'rCSI', 'FGVitA', 'FGProtein']
+COND_BASE_COLS = ["entropy_2", "rwi_2",'r3q_2', 'rfh_avg_2',
+    'vim_avg_2']
 SECTOR_COL     = "sector"
 ADM1_COL       = "adm1name"
 PSU_COL        = "psu"

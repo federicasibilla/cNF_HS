@@ -38,7 +38,7 @@ target_cols = [
 ]
 
 cond_cols_adm1 = [
-    "entropy_1", "rwi_1",
+    "entropy_1", "rwi_1","r3q_1", "rfh_avg_1", "vim_avg_1",
     "sector"
 ]
 sector_col = "sector"  

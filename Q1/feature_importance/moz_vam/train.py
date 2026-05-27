@@ -37,13 +37,13 @@ SEEDS = [1, 2, 3, 4, 5]
 
 target_cols = [
         'FCS', 'rCSI', 'FGVitA',
-    'FGProtein', 'FGHIron'
+    'FGProtein'
 ]
 
 # Full set of conditioning columns — subsets are defined per feature level below
 cond_cols_adm1 = [
     "entropy_2", "rwi_2",
-    "sector"
+    "sector", 'r3q_2', 'rfh_avg_2', 'vim_avg_2'
 ]
 
 # ---------------------------------------------------------------
@@ -63,12 +63,24 @@ FEATURE_REMOVAL_LEVELS = [
         "name": "drop_rwi2",
         "drop_cond_cols": ["rwi_2"]
     },
+    {
+        "name": "drop_meteoclimatic",
+        "drop_cond_cols": ["r3q_2", "rfh_avg_2", "vim_avg_2"]
+    },
 
     # --- size 2: remove two blocks ---
     {
         "name": "drop_entropy2_rwi2",
         "drop_cond_cols": ["entropy_2", "rwi_2"]
-    }
+    },
+    {
+        "name": "drop_entropy2_meteoclimatic",
+        "drop_cond_cols": ["entropy_2", "r3q_2", "rfh_avg_2", "vim_avg_2"]
+    },
+    {
+        "name": "drop_rwi2_meteoclimatic",
+        "drop_cond_cols": ["rwi_2", "r3q_2", "rfh_avg_2", "vim_avg_2"]
+    },
 ]
 
 sector_col = "sector"

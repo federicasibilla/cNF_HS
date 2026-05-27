@@ -25,8 +25,8 @@ DATA_PATH = "/data/shared/fsibilla/clean_code/Q1/experiments/zwe_mics/full.csv"
 OUTPUT_DIR = "/data/shared/fsibilla/clean_code/Q1/experiments/zwe_mics/results"
 
 PSU_PER_ADM1_LEVELS = [
-    #1,
-    #2,
+    1,
+    2,
     4,
     8
 ]
@@ -38,7 +38,7 @@ target_cols = [
 ]
 
 cond_cols_adm1 = [
-    "entropy_1", "rwi_1",
+    "entropy_1", "rwi_1", "r3q_1", "rfh_avg_1", "vim_avg_1",
     "sector"
 ]
 sector_col = "sector"  

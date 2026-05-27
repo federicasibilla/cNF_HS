@@ -41,7 +41,7 @@ target_cols = ["space_per_person", "avg_adult_education", "wscore"
 # Full set of conditioning columns — subsets are defined per feature level below
 cond_cols_adm1 = [
     "entropy_1", "rwi_1",
-    "sector"
+    "sector", 'r3q_1', 'rfh_avg_1', 'vim_avg_1'
 ]
 
 # ---------------------------------------------------------------
@@ -61,12 +61,24 @@ FEATURE_REMOVAL_LEVELS = [
         "name": "drop_rwi2",
         "drop_cond_cols": ["rwi_1"]
     },
+    {
+        "name": "drop_meteoclimatic",
+        "drop_cond_cols": ["r3q_1", "rfh_avg_1", "vim_avg_1"]
+    },
 
     # --- size 2: remove two blocks ---
     {
         "name": "drop_entropy2_rwi2",
         "drop_cond_cols": ["entropy_1", "rwi_1"]
-    }
+    },
+    {
+        "name": "drop_entropy2_meteoclimatic",
+        "drop_cond_cols": ["entropy_1", "r3q_1", "rfh_avg_1", "vim_avg_1"]
+    },
+    {
+        "name": "drop_rwi2_meteoclimatic",
+        "drop_cond_cols": ["rwi_1", "r3q_1", "rfh_avg_1", "vim_avg_1"]
+    },
 ]
 
 sector_col = "sector"

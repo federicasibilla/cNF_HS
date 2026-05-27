@@ -35,12 +35,13 @@ SEEDS = [1, 2, 3, 4, 5]
 
 target_cols = [
     'FCS', 'rCSI', 'FGVitA',
-    'FGProtein', 'FGHIron'
+    'FGProtein', 
 ]
 
 cond_cols_adm1 = [
     "entropy_2", "rwi_2",
-    "sector"
+    "sector", 'r3q_2', 'rfh_avg_2',
+    'vim_avg_2'
 ]
 sector_col = "sector"  
 
