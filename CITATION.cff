@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper below."
+title: "cNF_HS: Context-conditioned generative models for humanitarian surveys"
+abstract: "Conditional normalising flows that refine sparse humanitarian survey data to subnational resolution, producing estimates for administrative units the original survey never sampled."
+type: software
+license: MIT
+repository-code: "https://github.com/federicasibilla/cNF_HS"
+authors:
+  - family-names: "Sibilla"
+    given-names: "Federica"
+  - family-names: "Voukelatou"
+    given-names: "Vasiliki"
+  - family-names: "Piovani"
+    given-names: "Duccio"
+  - family-names: "Koupparis"
+    given-names: "Kyriacos"
+  - family-names: "Paolotti"
+    given-names: "Daniela"
+  - family-names: "Schifanella"
+    given-names: "Rossano"
+  - family-names: "Kalimeri"
+    given-names: "Kyriaki"
+    orcid: "https://orcid.org/0000-0001-8068-5916"
+preferred-citation:
+  type: article
+  title: "Context-Conditioned Generative Models Enable Subnational Refinement of Sparse Humanitarian Surveys"
+  year: 2026
+  url: "https://arxiv.org/abs/2605.31489"
+  authors:
+    - family-names: "Sibilla"
+      given-names: "Federica"
+    - family-names: "Voukelatou"
+      given-names: "Vasiliki"
+    - family-names: "Piovani"
+      given-names: "Duccio"
+    - family-names: "Koupparis"
+      given-names: "Kyriacos"
+    - family-names: "Paolotti"
+      given-names: "Daniela"
+    - family-names: "Schifanella"
+      given-names: "Rossano"
+    - family-names: "Kalimeri"
+      given-names: "Kyriaki"
