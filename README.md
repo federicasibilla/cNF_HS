@@ -211,12 +211,4 @@ Large preprocessed data files are not suitable for GitHub storage. The required 
 
 ---
 
-## Utilization
-
-Add utilization pipeline
-
----
-
-## Citation
-
-Add how to cite
+[![DOI](https://zenodo.org/records/21391841)]
